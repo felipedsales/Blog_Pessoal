@@ -49,7 +49,7 @@ public class TemaController {
 	public ResponseEntity<Tema> putTema(@RequestBody Tema tema){
 		return ResponseEntity.status(HttpStatus.OK).body(temaRepository.save(tema));
 	}
-	@DeleteMapping("/{id")
+	@DeleteMapping("/{id}")
 	public void deleteTema(@PathVariable long id) {
 		temaRepository.deleteById(id);
 	}
